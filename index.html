@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Filtro de Produtos</h2>
+
+    <input type="text" id="buscaProduto" placeholder="Buscar por nome" />
+
+    <select id="filtroCategoriaProduto">
+        <option value="">Todas as categorias</option>
+        <option value="Notebook">Notebook</option>
+        <option value="Celular">Celular</option>
+        <option value="Acessório">Acessório</option>
+    </select>
+
+    <label>Preço máximo: R$ <span id="valorPreco">5000</span></label>
+    <input type="range" id="filtroPreco" min="100" max="5000" value="5000" step="100" />
+
+    <div id="listaProdutos"></div>
+
+</body>
+<script src="./index .js"></script>
+
+</html>
